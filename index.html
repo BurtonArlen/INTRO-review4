@@ -2,28 +2,12 @@
 <html>
   <head>
     <title>Checkers Pizza</title>
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
     <script src="js/js.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header" id="">
-          <a class="navbar-brand" href="#">
-            <p>Checkers Pizza</p>
-          </a>
-        </div>
-        <div class="nav navbar-inverse navbar-right" id="">
-          <ul class="nav nav-pills">
-            <li role="button" class="active home"><a href="#">Home</a></li>
-            <li role="button" class="active"><a href="">Ordering</a></li>
-            <li role="button" class="active"><a href="">Reviews</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="container">
       <div class="jumbotron">
         <h1>Checkers Pizza</h1>
@@ -32,57 +16,68 @@
     </div>
     <div class="container">
       <div class="row crusts">
-        <div id="crust1" class="col-md-3 premadePizzaSelector">
+        <h1>CRUST SELECTION</h1>
+        <div id="crust1" value="0" class="col-md-3 premadeCrustSelector btn pizzaButton">
         </div>
-        <div id="crust2" class="col-md-3 premadePizzaSelector">
+        <div id="crust2" value="1" class="col-md-3 premadeCrustSelector btn pizzaButton">
         </div>
-        <div id="crust3" class="col-md-3 premadePizzaSelector">
+        <div id="crust3" value="2" class="col-md-3 premadeCrustSelector btn pizzaButton">
         </div>
-        <div id="crust4" class="col-md-3 premadePizzaSelector">
+        <div id="crust4" value="3" class="col-md-3 premadeCrustSelector btn pizzaButton">
         </div>
       </div>
       <div class="row sauces">
-        <div id="sauce1" class="col-md-4 premadePizzaSelector">
+        <h1>SAUCE SELECTION</h1>
+        <div id="sauce1" value="0" class="col-md-4 premadeSauceSelector btn pizzaButton">
         </div>
-        <div id="sauce2" class="col-md-4 premadePizzaSelector">
+        <div id="sauce2" value="1" class="col-md-4 premadeSauceSelector btn pizzaButton">
         </div>
-        <div id="sauce3" class="col-md-4 premadePizzaSelector">
+        <div id="sauce3" value="2" class="col-md-4 premadeSauceSelector btn pizzaButton">
+        </div>
+        <div id="sauce4" value="3" class="col-md-4 premadeSauceSelector btn pizzaButton">
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row topping1">
-        <div id="topping1" class="col-md-3 premadePizzaSelector">
+        <h1>TOPPINGS</h1>
+        <div id="topping1" value="0" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
-        <div id="topping2" class="col-md-3 premadePizzaSelector">
+        <div id="topping2" value="1" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
-        <div id="topping3" class="col-md-3 premadePizzaSelector">
+        <div id="topping3" value="2" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
-        <div id="topping4" class="col-md-3 premadePizzaSelector">
+        <div id="topping4" value="3" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
       </div>
       <div class="row topping2">
-        <div id="topping5" class="col-md-3 premadePizzaSelector">
+        <div id="topping5" value="4" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
-        <div id="topping6" class="col-md-3 premadePizzaSelector">
+        <div id="topping6" value="5" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
-        <div id="topping7" class="col-md-3 premadePizzaSelector">
+        <div id="topping7" value="6" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
-        <div id="topping8" class="col-md-3 premadePizzaSelector">
+        <div id="topping8" value="7" class="col-md-3 premadeToppingSelector btn pizzaButton">
         </div>
       </div>
       <div class="row size">
-        <div id="size1" class="col-md-4 premadePizzaSelector">
+        <h1>SIZE SELECTION</h1>
+        <div id="size1" value="0" class="col-md-4 premadeSizeSelector btn pizzaButton">
         </div>
-        <div id="size2" class="col-md-4 premadePizzaSelector">
+        <div id="size2" value="1" class="col-md-4 premadeSizeSelector btn pizzaButton">
         </div>
-        <div id="size3" class="col-md-4 premadePizzaSelector">
+        <div id="size3" value="2" class="col-md-4 premadeSizeSelector btn pizzaButton">
         </div>
-        <div id="size4" class="col-md-4 premadePizzaSelector">
+        <div id="size4" value="3" class="col-md-4 premadeSizeSelector btn pizzaButton">
         </div>
       </div>
-      <div class="container">
-        <div class="jumbotron">
+      <div class="row container decideTime">
+        <button class="decisionButton" type="continue" id="checkout">Total</button>
+        <button class="decisionButton" type="reset" id="reset">Clear order</button>
+      </div>
+      <div class="row container">
+        <div id="costBox" class="jumbotron">
+          <h1 class="payReader">YOUR TOTAL IS:<span id="finalCost"></span></h1>
           <!--price output here-->
         </div>
       </div>
