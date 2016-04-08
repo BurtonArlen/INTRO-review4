@@ -53,7 +53,7 @@ $(document).ready(function(){
   var crustSelector = 0;
 
   $('div.pizzaButton').click(function(event){
-    $(this).addClass('active');
+    $(this).addClass('selected');
   });
 
   $('div.premadeCrustSelector').click(function(event){
@@ -90,7 +90,7 @@ $(document).ready(function(){
     totalCost = 0;
   });
   $('button#reset').click(function(event){
-    $('div#pizzaButton').removeClass('active');
+    $('div#pizzaButton').removeClass('selected');
     myPizza = {topping: [], crust: [], sauce: [], amount: []}
     cost = 20;
     totalCost = 0;
